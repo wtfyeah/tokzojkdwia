@@ -147,3 +147,14 @@ client.on("messageCreate", async message => {
 ======================= */
 
 client.login(process.env.DISCORD_TOKEN);
+
+const http = require("http");
+
+const PORT = process.env.PORT || 3000;
+
+http.createServer((req, res) => {
+  res.writeHead(200);
+  res.end("ok");
+}).listen(PORT, () => {
+  console.log(`Listening on port ${PORT}`);
+});
