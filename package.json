@@ -1,0 +1,17 @@
+{
+  "name": "donutsmp-discord-bot",
+  "version": "1.0.0",
+  "description": "Discord bot that listens to webhook usernames and displays DonutSMP player stats",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "node-fetch": "^2.6.9",
+    "dotenv": "^16.4.1"
+  }
+}
